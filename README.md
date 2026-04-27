@@ -1,15 +1,14 @@
 # 🍊 Klasifikasi Buah: Orange vs Grapefruit
 
-## 📌 Deskripsi Proyek
+## Deskripsi Proyek
 
 Proyek ini bertujuan untuk membangun model machine learning untuk mengklasifikasikan buah apakah termasuk **orange (jeruk)** atau **grapefruit (anggur)** berdasarkan fitur numerik yang tersedia pada dataset.
 
 Dataset yang digunakan:
-👉 https://www.kaggle.com/datasets/joshmcadams/oranges-vs-grapefruit
+>>> https://www.kaggle.com/datasets/joshmcadams/oranges-vs-grapefruit
 
----
 
-## ⚙️ Tahapan Pembuatan Model
+## Tahapan Pembuatan Model
 
 ### 1. Import Library
 
@@ -21,7 +20,6 @@ Library yang digunakan:
 * seaborn
 * scikit-learn
 
----
 
 ### 2. Load Dataset
 
@@ -31,7 +29,6 @@ Dataset dibaca menggunakan pandas:
 df = pd.read_csv("citrus.csv")
 ```
 
----
 
 ### 3. Exploratory Data Analysis (EDA)
 
@@ -42,7 +39,6 @@ Dilakukan untuk memahami struktur data:
 * Melihat distribusi label (orange vs grapefruit)
 * Visualisasi hubungan antar fitur
 
----
 
 ### 4. Data Preprocessing
 
@@ -66,7 +62,6 @@ train_test_split(test_size=0.2, random_state=42)
 
 Dilakukan normalisasi menggunakan StandardScaler (terutama untuk SVM)
 
----
 
 ### 5. Pembuatan Model
 
@@ -76,7 +71,6 @@ Model yang digunakan:
 * 📊 Naive Bayes
 * ⚡ Support Vector Machine (SVM)
 
----
 
 ### 6. Training Model
 
@@ -86,7 +80,6 @@ Setiap model dilatih menggunakan data training:
 model.fit(X_train, y_train)
 ```
 
----
 
 ### 7. Evaluasi Model
 
@@ -97,9 +90,8 @@ Evaluasi dilakukan menggunakan:
 * Recall
 * F1-score
 
----
 
-## 📊 Hasil Evaluasi Model
+## Hasil Evaluasi Model
 
 ### 🌳 Decision Tree
 
@@ -129,7 +121,7 @@ Evaluasi dilakukan menggunakan:
 
 ---
 
-## 🧠 Analisis
+## Analisis
 
 Berdasarkan hasil pengujian:
 
@@ -137,15 +129,13 @@ Berdasarkan hasil pengujian:
 * **Support Vector Machine (SVM)** memiliki performa yang cukup tinggi (93.7%), karena mampu memisahkan data dengan margin optimal.
 * **Naive Bayes** memiliki akurasi paling rendah (92%) karena asumsi independensi antar fitur tidak sepenuhnya sesuai dengan dataset.
 
----
 
-## 📌 Kesimpulan
+##  Kesimpulan
 
 Model terbaik untuk klasifikasi dataset ini adalah **Decision Tree**, karena memberikan performa paling tinggi dibandingkan model lainnya.
 
----
 
-## 📂 Struktur Project
+## Struktur Project
 
 ```
 uts-ml/
@@ -157,7 +147,6 @@ uts-ml/
 │── README.md
 ```
 
----
 
 ## 🚀 Cara Menjalankan Program
 
@@ -173,8 +162,7 @@ pip install pandas numpy scikit-learn matplotlib seaborn
 python main.py
 ```
 
----
 
-## ✨ Author
+## Author
 
 Nama: (NAZWA NABILLA WIJAYA-1237050116)
